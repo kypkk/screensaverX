@@ -1,5 +1,9 @@
 # screensaverX
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/kypkk/screensaverX.svg)](https://pkg.go.dev/github.com/kypkk/screensaverX)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/kypkk/screensaverX)](go.mod)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A terminal screensaver that's intentionally hard to dismiss — built to make you actually take the break.
 
 ## Install / Build / Run
@@ -44,4 +48,4 @@ Note: most terminals collapse `Ctrl+<letter>` to a single control character and 
 
 ## License
 
-MIT
+[MIT](LICENSE)
