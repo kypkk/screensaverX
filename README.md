@@ -3,6 +3,8 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/kypkk/screensaverX.svg)](https://pkg.go.dev/github.com/kypkk/screensaverX)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/kypkk/screensaverX)](go.mod)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Built with Bubble Tea](https://img.shields.io/badge/Built%20with-Bubble%20Tea-ff69b4?logo=charm&logoColor=white)](https://github.com/charmbracelet/bubbletea)
+[![Styled with Lip Gloss](https://img.shields.io/badge/Styled%20with-Lip%20Gloss-ff69b4?logo=charm&logoColor=white)](https://github.com/charmbracelet/lipgloss)
 
 A terminal screensaver that's intentionally hard to dismiss — built to make you actually take the break.
 
@@ -35,16 +37,23 @@ const exitKey = "ctrl+q"
 
 Change this constant to any string bubbletea recognizes, then rebuild:
 
-| What you want | String |
-|---|---|
-| Ctrl + letter | `"ctrl+a"`, `"ctrl+q"`, `"ctrl+x"`, … |
-| Function keys | `"f1"`, `"f2"`, … `"f12"` |
-| Alt + letter | `"alt+a"`, `"alt+x"`, … |
-| Escape | `"esc"` |
-| Arrow keys | `"up"`, `"down"`, `"left"`, `"right"` |
+| What you want      | String                                                                                |
+| ------------------ | ------------------------------------------------------------------------------------- |
+| Ctrl + letter      | `"ctrl+a"`, `"ctrl+q"`, `"ctrl+x"`, …                                                 |
+| Function keys      | `"f1"`, `"f2"`, … `"f12"`                                                             |
+| Alt + letter       | `"alt+a"`, `"alt+x"`, …                                                               |
+| Escape             | `"esc"`                                                                               |
+| Arrow keys         | `"up"`, `"down"`, `"left"`, `"right"`                                                 |
 | Other special keys | `"enter"`, `"tab"`, `"space"`, `"backspace"`, `"home"`, `"end"`, `"pgup"`, `"pgdown"` |
 
 Note: most terminals collapse `Ctrl+<letter>` to a single control character and drop the Shift bit, so `"ctrl+shift+q"` only works in terminals that support the [kitty keyboard protocol](https://sw.kovidgoyal.net/kitty/keyboard-protocol/) (Kitty, WezTerm, Ghostty, etc.). `Cmd+<letter>` on macOS is typically intercepted by the terminal app before reaching the program.
+
+## Acknowledgments
+
+Built on top of two libraries by [Charm](https://charm.sh):
+
+- [Bubble Tea](https://github.com/charmbracelet/bubbletea) — the Elm-style TUI framework that drives the screensaver's event loop and rendering.
+- [Lip Gloss](https://github.com/charmbracelet/lipgloss) — declarative terminal styling for the border, padding, and centering.
 
 ## License
 
